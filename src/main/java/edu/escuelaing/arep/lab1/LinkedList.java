@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
-public class LinkedList<E> implements List<E>, Iterable<E> {
+public class LinkedList<E> implements List<E>, Iterator<E> {
 
     private int size;
     public Node<E> current;
@@ -17,18 +17,44 @@ public class LinkedList<E> implements List<E>, Iterable<E> {
         this.size = 0;
     }
 
-    public Node<E> getCurrent(){
-        return this.current;
+    // methods of iterator
+    public boolean hasNext() {
+        if(this.current == null){
+            return false;
+        }
+        return true;
     }
 
-    public Node<E> getNextNode(){
-        return this.next;
+    public E next() {
+        E data = current.getCurrent();
+        current = current.getNext();
+        return data;
     }
 
+    public void remove() {}
+
+    // methods of list
     public int size() {
         return this.size;
     }
 
+    public Iterator<E> iterator() {
+        return this;
+    }
+
+    public boolean add(E data) {
+        Node<E> newData = new Node<E>(data);
+        newData.nextNode(this.current);
+        this.current = newData;
+        this.size +=1;
+        return true;
+    }
+
+    public void clear() {
+        this.size = 0;
+    }
+
+    //methods i dont use.
     public boolean isEmpty() {
         return false;
     }
@@ -37,25 +63,12 @@ public class LinkedList<E> implements List<E>, Iterable<E> {
         return false;
     }
 
-    public Iterator<E> iterator() {
-        IteratorList iteratorList = new IteratorList(this);
-        return iteratorList;
-    }
-
     public Object[] toArray() {
         return new Object[0];
     }
 
     public <T> T[] toArray(T[] a) {
         return null;
-    }
-
-    public boolean add(E data) {
-        Node newData = new Node(data);
-        newData.nextNode(this.current);
-        this.current = newData;
-        this.size +=1;
-        return true;
     }
 
     public boolean remove(Object o) {
@@ -82,10 +95,6 @@ public class LinkedList<E> implements List<E>, Iterable<E> {
         return false;
     }
 
-    public void clear() {
-
-    }
-
     public E get(int index) {
         return null;
     }
@@ -94,9 +103,7 @@ public class LinkedList<E> implements List<E>, Iterable<E> {
         return null;
     }
 
-    public void add(int index, E element) {
-
-    }
+    public void add(int index, E element) {    }
 
     public E remove(int index) {
         return null;

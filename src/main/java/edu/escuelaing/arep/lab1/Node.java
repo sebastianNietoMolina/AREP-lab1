@@ -10,11 +10,13 @@ public class Node<E> {
         this.next = null;
     }
 
-    public void nextNode(Node data){
-        this.next = data;
+    public E getCurrent(){
+        return this.current;
     }
 
-    public E getcurrent(){
-        return this.current;
+    public Node<E> getNext(){ return this.next;}
+
+    public void nextNode(Node data){
+        this.next = data;
     }
 }

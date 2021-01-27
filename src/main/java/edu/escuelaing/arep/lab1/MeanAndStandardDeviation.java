@@ -4,17 +4,34 @@ import java.util.List;
 
 public class MeanAndStandardDeviation {
 
-    public static Double mean(List<Double> meanList){
-        Double sum = 0.0;
-        for(Double data : meanList){
-            System.out.println( "Todo bien?" );
-            System.out.println( data );
-            sum += data;
-        }
-        return sum/meanList.size();
+    public static List<Double> secondList = new LinkedList<Double>();
+
+     public static Double mean(List<Double> meanList){
+         Double sum = 0.0;
+         for(Double num : meanList){
+             secondList.add(num);
+             sum += num;
+         }
+         Double res = sum/meanList.size();
+         return res;
     }
 
     public static Double stDeviation(List<Double> stdList){
-        return 0.0;
+        clear();
+        Double meanData = mean(stdList);
+        Double rest = 0.0;
+        for(Double num : secondList){
+            rest += Math.pow(num-meanData,2);
+        }
+        Double res = rest/(secondList.size()-1);
+        clear();
+        return Math.sqrt(res);
     }
+
+    public static void clear(){
+        for(Double num : secondList){
+            secondList.clear();
+        }
+    }
+
 }
