@@ -29,6 +29,7 @@ public class AppTest extends TestCase{
         return new TestSuite( AppTest.class );
     }
 
+
     public void testMean1(){
         List lis = new LinkedList();
 

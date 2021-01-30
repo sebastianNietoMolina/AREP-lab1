@@ -6,6 +6,11 @@ public class MeanAndStandardDeviation {
 
     public static List<Double> secondList = new LinkedList<Double>();
 
+    /**
+     * Calcula la media de un arreglo de elementos
+     * @param meanList Lista que contiene "n" reales.
+     * @return La media.
+     */
      public static Double mean(List<Double> meanList){
          Double sum = 0.0;
          for(Double num : meanList){
@@ -16,6 +21,11 @@ public class MeanAndStandardDeviation {
          return res;
     }
 
+    /**
+     * Calcula la desviación estandar de un arreglo de "n" elementos.
+     * @param stdList Lista que contiene "n" reales.
+     * @return La desviación estandar.
+     */
     public static Double stDeviation(List<Double> stdList){
         clear();
         Double meanData = mean(stdList);
@@ -28,6 +38,9 @@ public class MeanAndStandardDeviation {
         return Math.sqrt(res);
     }
 
+    /**
+     * Resetea el arreglo auxiliar.
+     */
     public static void clear(){
         for(Double num : secondList){
             secondList.clear();

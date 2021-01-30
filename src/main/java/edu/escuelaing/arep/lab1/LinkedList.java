@@ -11,6 +11,9 @@ public class LinkedList<E> implements List<E>, Iterator<E> {
     public Node<E> current;
     public Node<E> next;
 
+    /**
+     * Constructor de LinkedList
+     */
     public LinkedList() {
         this.current = null;
         this.next = null;
@@ -18,6 +21,11 @@ public class LinkedList<E> implements List<E>, Iterator<E> {
     }
 
     // methods of iterator
+
+    /**
+     * Este método me dice si hay otro elemento en el iterador.
+     * @return true o false si hay elemnto o no.
+     */
     public boolean hasNext() {
         if(this.current == null){
             return false;
@@ -25,6 +33,10 @@ public class LinkedList<E> implements List<E>, Iterator<E> {
         return true;
     }
 
+    /**
+     *Me da el siguiente valor del nodo.
+     * @return El siguiente dato del nodo.
+     */
     public E next() {
         E data = current.getCurrent();
         current = current.getNext();
@@ -34,14 +46,28 @@ public class LinkedList<E> implements List<E>, Iterator<E> {
     public void remove() {}
 
     // methods of list
+
+    /**
+     * Contiene el tamaño del arreglo.
+     * @return el amaño del arreglo.
+     */
     public int size() {
         return this.size;
     }
 
+    /**
+     * Retorna un iterador sobre la lista.
+     * @return Iterador de los elmentos.
+     */
     public Iterator<E> iterator() {
         return this;
     }
 
+    /**
+     * Agrega elementos al final del arreglo
+     * @param data El dato a guardar
+     * @return True si ha agregado el elemento.
+     */
     public boolean add(E data) {
         Node<E> newData = new Node<E>(data);
         newData.nextNode(this.current);
@@ -50,6 +76,9 @@ public class LinkedList<E> implements List<E>, Iterator<E> {
         return true;
     }
 
+    /**
+     * Reinicia la lista cuando el arreglo se ha borrado.
+     */
     public void clear() {
         this.size = 0;
     }
