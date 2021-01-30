@@ -1,105 +1,71 @@
-# Título del Proyecto
+# INTRODUCTION TO COMPLEX SYSTEMS, JAVA, MVN, AND GIT
 
-_Acá va un párrafo que describa lo que es el proyecto_
+Este proyecto busca implementar la media y la desviación estándar haciendo uso de LinkedList, en particular esta debe ser creada por nosotros, y debe ser compatible con la interface List. Para ello hacemos uso de estructura de datos para manejar los nodos correctamente y poder implementar la lista.
 
 ## Comenzando 🚀
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-Mira **Deployment** para conocer como desplegar el proyecto.
-
-
 ### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
-
-```
-Da un ejemplo
-```
+Para poder hacer uso de este proyecto se debe tener instalado:
+ 
+  * MVN
+  * Git
+  * Java
 
 ### Instalación 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
-
-_Dí cómo será ese paso_
+Lo primero que debe hacer es descargar el proyecto, lo pude hacer directamente descargando el .zip, o puede clonar el archivo con el siguiente comando.
 
 ```
-Da un ejemplo
+git clone https://github.com/sebastianNietoMolina/AREP-lab1.git
 ```
 
-_Y repite_
+Entramos al directorio del proyecto con el comando
 
 ```
-hasta finalizar
+cd lab1
 ```
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
+Luego debe ingresar el siguiente comando para que se ejectue hasta la fase de empaquetamiento, debe asegurar que antes de ingresar este comando, exista en la carpeta que esta, el archivo llamado pom.xml
+
+```
+mvn package
+```
+
+Tambien me gustaria aclarar que puedes descargar el javaDoc, este quedara guardado en una carpeta target, esta se genera una vez echo el comando anterior, y con el siguiente comando se creara la carpeta site, la ruta sera target/site.
+
+```
+mvn javadoc:javadoc
+```
 
 ## Ejecutando las pruebas ⚙️
 
-_Explica como ejecutar las pruebas automatizadas para este sistema_
+El anterior comando ya ejecuta las pruebas, pero si desea verlas por aparte puede ejecutar el siguiente comando.
+
+```
+mvn test.
+```
 
 ### Analice las pruebas end-to-end 🔩
 
-_Explica que verifican estas pruebas y por qué_
+Me gustaría aclarar que mi lista no esta del todo perfecta ya que cuando se ejecutan las pruebas no reconoce del todo los arreglos y puede que las pruebas no pasen a la primera, posteriormente se dará cuenta que si funciona hasta pasar todas las pruebas. Las pruebas son en total 6, 3 son pruebas de media y 3 son de desviación estandar.
 
-```
-Da un ejemplo
-```
-
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-## Despliegue 📦
-
-_Agrega notas adicionales sobre como hacer deploy_
-
-## Construido con 🛠️
-
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
-
-## Contribuyendo 🖇️
-
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-## Wiki 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
+![](https://github.com/sebastianNietoMolina/AREP-lab1/blob/main/fotos-documentos/pruebas.PNG)
 
 ## Autores ✒️
 
 _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
 
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
+* **Sebas Nieto** - *Trabajo Inicial* - [sebNieto](https://github.com/sebastianNietoMolina)
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE.md](LICENSE.md) para detalles
 
 ## Expresiones de Gratitud 🎁
 
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* etc.
-
-
-
+Reconocimientos a:
 ---
 ⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
