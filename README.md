@@ -1,6 +1,6 @@
 # INTRODUCTION TO COMPLEX SYSTEMS, JAVA, MVN, AND GIT
 
-Este proyecto busca implementar la media y la desviación estándar haciendo uso de LinkedList, en particular esta debe ser creada por nosotros, y debe ser compatible con la interface List. Para ello hacemos uso de estructura de datos para manejar los nodos correctamente y poder implementar la lista.
+Este proyecto busca implementar la media y la desviación estándar haciendo uso de LinkedList, en particular esta debe ser creada por nosotros, y debe ser compatible con la interface List. Para ello hacemos uso de estructura de datos para manejar los nodos correctamente y poder implementar la lista. [Aquí](Design.pdf) puede encontrar el informe con mayor detalle.
 
 ## Comenzando 🚀
 
