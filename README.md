@@ -2,6 +2,8 @@
 
 Este proyecto busca implementar la media y la desviación estándar haciendo uso de LinkedList, en particular esta debe ser creada por nosotros, y debe ser compatible con la interface List. Para ello hacemos uso de estructura de datos para manejar los nodos correctamente y poder implementar la lista. [Aquí](Design.pdf) puede encontrar el informe con mayor detalle.
 
+Nota: Mas adelante cuando corras el empaquetado o las pruebas puede que no pasen las pruebas, debes volver a correr esos comandos y veras que después pasara correctamente, esto sucede ya que la lista no está guardando los datos permanentemente y estos se borran cuando iteras por primera vez, por esa razón cuando corre las pruebas puede que no pasen al primer intento ya que se pueden cursar los arreglos y no los este generando bien.
+
 ## Comenzando 🚀
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
@@ -68,4 +70,4 @@ Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE.md](LICENSE.
 
 Reconocimientos a:
 ---
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
+[Villanuevand](https://github.com/Villanuevand), use su estructura para mi readme.md.
