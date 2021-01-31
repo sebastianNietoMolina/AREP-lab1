@@ -60,7 +60,7 @@ Me gustaría aclarar que mi lista no esta del todo perfecta ya que cuando se eje
 
 _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
 
-* **Sebas Nieto** - *Trabajo Inicial* - [sebNieto](https://github.com/sebastianNietoMolina)
+* **Sebastian Nieto** - *Trabajo Inicial* - [sebNieto](https://github.com/sebastianNietoMolina)
 
 ## Licencia 📄
 
